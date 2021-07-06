@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Containers</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #561f99;
+  padding: 50px;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 700px; 
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav p{
+  padding: 2px;
+  font-size: 15px;
+  color: green;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #f1f1f1;
+  height: 700px; 
+}
+button:hover {
+      background:  white;
+    }
+button {
+      margin-top: 5px;
+      cursor: pointer;
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px; 
+      background:  #006622;
+      font-size: 15px;
+      color: white;
+}
+table tr,td, th {
+      background: #666;
+      padding: 20px;
+      font-size: 20px;
+      border-radius: 10px;
+}
+table th{
+  color: white;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 20px;
+  font-size: 15px;
+  text-align: left;
+  color: white;
+  height: 100px;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+table td {
+  padding: 30px;
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>
+  	RASHLI DREAM SHADES BEAUTY COSMETIC
+  </h2>
+</header>
+
+<section>
+  <nav>
+  <button style="width: 100%; padding:3px"><a href="index.html">Home</a></button>
+  <button style="width: 100%; padding:3px"><a href="cos.html">Cosmetics</a></button>
+  <button style="width: 100%; padding:3px"><a href="form.html">Order</a></button>
+  <button style="width: 100%; padding:3px"><a href="abus.html">About Us</a></button>
+  <button style="width: 100%; padding:3px"><a href="cont.html">Contact Us</a></button>
+  </nav>
+  
+  <article>
+    <h3>Hello!<br>Welcome to our site.</h3>
+    <div align="center">
+        <img src="images/im1 (2).jpg" width="500" height="350">
+        <img src="images/im1 (6).jpg" width="500" height="350">
+    </div>
+    <table>
+      <tr>
+        <th>Our Mission</th>
+        <th>Our Vision</th>
+      </tr>
+      <tr>
+        <td>To develop and many tacture cosmetic products that help professionals meet the highest quality standard so that their work will meet the highest quality standards.</td>
+        <td>To develop and many tacture cosmetic products that help professionals meet the highest quality standard so that their work will meet the highest quality standards.</td>
+      </tr>
+    </table>
+  </article>
+</section>
+
+<footer>
+  <p>@RASHLI DREAM SHADES BEAUTY COSMETIC</p>
+</footer>
+
+</body>
+</html>
